@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin and Ally</title>
+    <style>
+
+        @import url("https://use.typekit.net/wwk7kzt.css");
+        /* selector {
+        
+        properties: value;
+        
+        } */
+         /* Can select by Class (.), ID (#), or Element (head), you can even combine them together like .nav-class li */
+        
+        * {
+            --button-bg: #fafffd;
+            --button-border: #000000;
+            --button-color: #000000;
+            --button-hover: #ff0505;
+            --border-hover: cyan;
+            font-family: "greycliff-cf", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+         body {
+            padding: 95px;
+            padding-top: 70px;
+            background: url('./assets/AdobeStock_411911113.jpeg');
+            background-size: cover;
+            overflow:hidden;
+        }
+
+        .exit {
+            width: 200px;
+            background-color: black;
+            padding: 20px;
+            color: Red;
+        }
+        .exit:hover {
+            background-color: red;
+            color: black;
+        }
+
+
+         #logo img {
+            width: 256px;
+         }
+
+         #logo {
+            margin-bottom: 70px;
+         }
+         
+         .nav-group {
+            margin-bottom: 60px;
+            padding: 0px;
+         }
+
+         .nav-group li{
+            background-color: var(--button-bg);
+            width: 300px;
+            color: var(--button-color);
+            padding: 20px;
+            border-width: 4px;
+            border-style: solid;
+            border-color: var(--button-border);
+            margin-bottom: 5px;
+            list-style: ""
+         }
+
+         .nav-group li:hover{
+            background-color: var(--button-hover);
+            color: var(--button-bg);
+            border-color: var(--border-hover);
+         }
+
+
+
+
+         #B {
+            background-color: black;
+            color: white;
+            height: 30px;
+            margin-left: 202px;
+
+         }
+
+         footer {
+            margin-top: 10px;
+            background-color: var(--button-bg);
+            width: 500px;
+            color: var(--button-color);
+            padding: 20px;
+            border-width: 4px;
+            border-style: solid;
+            border-color: var(--button-border);
+
+         }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- Logo -->
+    <header id="logo"><img src=".\assets\Austin_&_ally_tv_series_logo.png"/></header>
+
+    <!-- Buttons -->
+    <nav class="nav-class">
+        <ul class="nav-group">
+            <li>Watch Show</li>
+            <li>Bonus Features</li>
+            <li>Characters</li>
+            <li>Out takes</li>
+            <li>Settings</li>
+        </ul>
+    </nav>
+
+    <!-- credits and background-->
+    <div class="exit">
+        <span>B</span> Exit Blu Ray Player
+    </div>
+    <footer>
+        <h2>Credits</h2>
+        Background Image: <a href="https://austinally.fandom.com/wiki/Austin_%26_Ally_Wiki">Steam Community</a>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+
+/* <weight>: Use a value from 400 to 700
+ <uniquifier>: Use a unique and descriptive class name
+
+ <weight>: Use a value from 100 to 900
+ <uniquifier>: Use a unique and descriptive class name
+
+
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+
+
+  font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; 
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --card-bg: rgba(25, 28, 36, 0.92);
+    --border-color: #1e3a4c;
+    --accent-color: #14b8a6;
+    --text-primary: #f3f4f6;
+    --text-muted: #9ca3af;
+    --location-color: #4ade80;
+    font-family: "Public Sans", sans-serif;
+    color: var(--text-primary);
+}
+
+body {
+    background-color: #0f172a;
+    background-image: url('./assets/css-pattern-by-magicpattern.png');
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 40px 60px 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+header {
+    padding: 24px 0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Baskervville", serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    border-bottom: 5px dashed var(--accent-color);
+}
+
+
+header span {
+    font-size: 40px;
+    font-family: "Baskervville", serif;
+    color: var(--accent-color);
+}
+
+
+
+h2 {
+    font-family: "Baskervville", serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 
+        2px 2px 0px var(--accent-color),
+        4px 4px 0px #0b2e59;
+}
+
+
+
+.introduction {
+    margin-bottom: 60px;
+    border-bottom: 5px dashed var(--accent-color);
+}
+
+
+
+.introduction .cards div {
+    background-color: var(--card-bg);
+    margin: auto;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    width: 48%; 
+    margin-bottom: 24px;
+    transition: box-shadow 300ms ease, border-color 300ms ease;
+}
+
+.introduction .cards div:hover {
+    box-shadow: 6px 6px 0px var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.introduction h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.introduction p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+
+
+
+.timeline {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 5px dashed var(--accent-color);
+
+}
+
+.timeline ul {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px 32px 24px 48px;
+    font-size: 18px;
+    line-height: 1.8;
+
+}
+
+.timeline ul li {
+    padding: 12px 0;
+    border-bottom: 2px dashed var(--accent-color);
+}
+
+.timeline ul li:last-child {
+    border-bottom: none;
+}
+
+.year {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-family: "Baskervville", serif;
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.location {
+    color: var(--location-color);
+    font-weight: 600;
+}
+
+
+.albums {
+    margin-bottom: 60px;
+}
+
+
+.albums .cards div {
+    margin: auto;
+    background-color: var(--card-bg);
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    width: 23%; 
+    margin-bottom: 24px;
+    transition: box-shadow 300ms ease;
+}
+
+.albums .cards div:hover {
+    box-shadow: 0 0 12px var(--accent-color);
+}
+
+.cards div > img {
+    width: 100%;
+    height: 180px; 
+    border-radius: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.albums h3 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.albums p {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+
+.button-link {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 4px;
+    margin-bottom: 6px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+.button-link:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+
+
+footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 5px dashed var(--accent-color);
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+}

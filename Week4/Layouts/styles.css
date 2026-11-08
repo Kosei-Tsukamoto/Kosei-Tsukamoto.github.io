@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -59,16 +63,20 @@ body {
 
 .card-grid {
   display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr; 
+  gap: 1.875rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 720px) {
+  html {
+    font-size: 12px;
+  }
   .card-grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr; 
   }
 }
+
 
 .card {
   background: white;
@@ -96,7 +104,9 @@ body {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; 
+  align-items: center;      
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 

@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: #133d7b;
+  color: #d8d3d3;
+  line-height: 1.6;
+}
+
+.wrapping {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.my-portfolio {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.nav-container {
+  max-width: 600px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 20px;
+}
+
+.nav-container button {
+  background-color: #0076ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.nav-container button:hover {
+  background-color: #0055b8;
+}
+
+
+.card-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr; 
+}
+
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image img {
+    width: 100%;
+   height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.color-1 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+.color-2 { background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); }
+.color-3 { background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%); }
+.color-4 { background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%); }
+
+
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+
+.card-content h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: rgb(50, 50, 50);
+}
+
+.card-content p {
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+
+
+.card-btn {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+.card-btn:hover {
+  opacity: 0.9;
+}

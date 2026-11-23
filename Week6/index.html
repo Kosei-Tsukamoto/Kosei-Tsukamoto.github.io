@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="app-container">
+    <header class="app-header">
+      <div>
+        <h1>JARVIS</h1>
+        <p>Just actually revere in span</p>
+        <p class="subtitle">What do you need to do today sir?</p>
+      </div>
+    <!-- interaction 5 -->
+      <button id="theme-toggle-btn" class="icon-btn" type="button" aria-label="Toggle color theme">
+        Evil Mode
+      </button>
+    </header>
+
+    <!-- interaction 1 -->
+    <form id="todo-form" class="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="What needs to be done?"
+        autocomplete="off"
+        required
+      >
+      <select id="priority-select" aria-label="Task priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+        <option value="dothisrn">Do this rn or die</option>
+      </select>
+      <button type="submit" class="primary-btn">Add Task</button>
+    </form>
+
+    <!-- interaction 3 -->
+    <nav class="filter-bar" aria-label="Task filters">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="active">Active</button>
+      <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+    </nav>
+
+    <!-- Interaction 2 -->
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <footer class="app-footer">
+      <span id="task-counter">0 tasks remaining</span>
+      <!-- Interaction 4 -->
+      <button type="button" id="clear-completed-btn" class="text-btn">
+        Clear Completed
+      </button>
+    </footer>
+  </main>
+</body>
+</html>
